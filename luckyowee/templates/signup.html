@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Lucky O'Wee - Criar Conta
+{% endblock %}
+
+{% block content %}
+
+    {% block form %}
+        <form method="POST">
+            {{form.csrf_token}}
+
+                {{ form.username.label() }}
+                {{ form.username() }}
+                <br><br>
+                {{ form.email.label() }}
+                {{ form.email() }}
+                <br><br>
+                {{ form.senha.label() }}
+                {{ form.senha() }}
+                <br><br>
+                {{ form.confirmacao_senha.label() }}
+                {{ form.confirmacao_senha() }}
+                <br><br>
+                {{ form.botao_confirmacao}}
+                
+        </form>
+    {% endblock %}
+
+{% endblock %}
