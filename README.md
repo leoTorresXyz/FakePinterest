@@ -19,7 +19,7 @@
       <li>pip install flask_login</li>
       <li>pip install flask_bcrypt</li>
       <li>pip install flask_wtf</li>
-      <li>pip install flask_email_validator</li>
+      <li>pip install email_validator</li>
     </ol>
   </dd>
 
